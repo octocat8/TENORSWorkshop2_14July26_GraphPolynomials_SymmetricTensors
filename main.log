@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.14)  7 JUL 2026 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.14)  8 JUL 2026 13:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -838,14 +838,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 
 ] [28
 
-]
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 125.
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 125.
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 125.
- [29
+] [29
 
 ] [30
 
@@ -854,6 +847,39 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
 ] [32
 
 ] [33
+
+] [34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+]
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 159.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 159.
+ [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
+] [46
 
 ]
 \tf@nav=\write6
@@ -871,21 +897,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C4340407C70CF05E08BEC63CD418ED9D;1257.
+(rerunfilecheck)             Checksum: A10B1B68041F562A13D8E42B8A6C1C12;1394.
  ) 
 Here is how much of TeX's memory you used:
- 24393 strings out of 476106
- 471007 string characters out of 5793933
- 1946975 words of memory out of 5000000
- 45864 multiletter control sequences out of 15000+600000
+ 24425 strings out of 476106
+ 471369 string characters out of 5793933
+ 1948975 words of memory out of 5000000
+ 45870 multiletter control sequences out of 15000+600000
  570423 words of font info for 81 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  101i,19n,107p,542b,782s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (33 pages, 241381 bytes).
+Output written on main.pdf (46 pages, 298628 bytes).
 PDF statistics:
- 1999 PDF objects out of 2073 (max. 8388607)
- 1542 compressed objects within 16 object streams
- 74 named destinations out of 1000 (max. 500000)
+ 2684 PDF objects out of 2984 (max. 8388607)
+ 2168 compressed objects within 22 object streams
+ 100 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,7 @@
 \beamer@sectionintoc {1}{Symmetric Tensors}{7}{0}{1}
 \beamer@sectionintoc {2}{Graphs and Graph Polynomials}{14}{0}{2}
 \beamer@subsectionintoc {2}{1}{Graph Polynomials}{20}{0}{2}
-\beamer@subsectionintoc {2}{2}{History}{25}{0}{2}
-\beamer@sectionintoc {3}{Describing the Relationship}{28}{0}{3}
-\beamer@subsectionintoc {3}{1}{Grading the space of Graphs}{28}{0}{3}
-\beamer@subsectionintoc {3}{2}{Establishing a BB Result for Symmetric Tensors}{30}{0}{3}
+\beamer@subsectionintoc {2}{2}{Graphs and the Grothendieck Ring}{25}{0}{2}
+\beamer@sectionintoc {3}{Describing the Relationship}{31}{0}{3}
+\beamer@subsectionintoc {3}{1}{Grading the space of Graphs}{31}{0}{3}
+\beamer@subsectionintoc {3}{2}{Establishing a BB Result for Symmetric Tensors}{43}{0}{3}
