@@ -8,7 +8,7 @@
 \usepackage{multirow, multicol}
 \usepackage{cleveref}
 
-% \usetheme{AnnArbor}ph
+\usetheme{Berlin}
 % \definecolor{KUL_blue}{rgb}{0.11,0.55,0.69}
 % \definecolor{KUL_dark_blue}{rgb}{0.067, 0.431, 0.541}
 % \definecolor{KUL_light_blue}{rgb}{0.86, 0.91, 0.94}
@@ -42,7 +42,10 @@
 \begin{frame}{Overview}
     \begin{itemize}
         \item<1-> Highlight a relationship between symmetric tensors and graph polynomials
-        \item<2-> Investigate the nature of this relationship 
+        \item<2-> Investigate the nature of this relationship in terms of \begin{enumerate}
+            \item<3-> Imposing a graded structure on the space of graphs
+            \item<4-> Establish a Belkale-Brosnan type result for symmetric tensors
+        \end{enumerate}
     \end{itemize}
 \end{frame}
 % 1. Describe hypothesis - graph polynomials are generating elements for the Grothendieck Ring (localised). Since these are homogenous polynomials and therefore can be identified with symmetric tensors, does this smaller set of symmetric tensors also exhibit this more general "generating" property?
@@ -51,44 +54,68 @@
 \begin{frame}{Symmetric Tensor Recap}
     \begin{itemize}
         \item<1-> \textit{"Symmetric tensors are objects that transform like symmetric tensors"}
-        \item<2->
+        \item<2-> For vector spaces $V_1, V_2 \ldots V_d$ over a field $k$, their tensor product is the vector space $V:= V_1 \otimes \cdots \otimes V_d$, describing all the multilinear mappings from $V_1^* \times \cdots V_d^* \to k$.
+        \item<3->  $T \in V$ is a symmetric tensor $\iff \sigma(T) = T \;\forall\; \sigma \in S_d$, where $S_d$ is the permutation group of $d$ elements.
+        \item<4-> Notation: $V^{\otimes d}$ denotes the tensor product of a vector space $V$ with itself $d$ times. $S^d(V) \subset V^{\otimes d}$ denotes the subspace containing all the symmetric tensors.
+        \item<5-> Elementary symmetric tensors are of the form $v^{\otimes d}$.
     \end{itemize}
 \end{frame} 
 % 2. How are they related to homogenous polynomials?
 \begin{frame}{Relationship with Homogenous Polynomials}
-    
+    Consider $k[x_1 \ldots x_n]_d$, the set of all homogenous polynomials of degree $d$ over $k$ (implicitly included in this is the $0$ polynomial). Then an established result is that $$k[x_1 \ldots x_n]_d \cong S^d(k^n)$$as $k$-vector spaces, by linearly extending the mapping of monomials $$\mathbf{x}^{\alpha}:= \prod_{i=1}^n x_i^{a_i} \mapsto \frac{1}{d!} \sum_{\sigma \in S_d} \sigma(\bigotimes_{i=1}^n e_i^{\otimes a_i}) $$
+    Here $\alpha$ denotes the tuple $(a_1, a_2, \ldots, a_n)$ where $a_i \geq 0 \;\forall\; i = 1, 2,\ldots,n$, and for this mapping $|\alpha| = \sum_{i=1}^{n} a_i = d$.
 \end{frame} 
 % 3. How are they related to the Veronese Variety
 \begin{frame}{Veronese Variety}
-    
+    Geometrically, consider $\proj V$ to be the set of all lines in $V \cong k^n$ passing through the origin. Then the Veronese mapping given by $$\nu_d: \proj V \to \proj k^N$$ taking points $$[x_1:x_2:\ldots:x_n] \mapsto [x_1^d: x_1^{d-1}x_2: \ldots: x_n^d]$$ allows for the visualisation of elementary (rank-1) symmetric tensors as points on a variety in $\proj k^N$. Here $N = \binom{n-1+d}{d}$. More general symmetric tensors then lie on secant varieties to the Veronese.
 \end{frame}
-\section{Graph Polynomials} %5 slides max
+%add a frame about secant varieties?
+%add a frame with the diagram showing connections between graphs, homogenous polynomials and symmetric tensors?
+\section{Graphs and Graph Polynomials} %5 slides max
 % 1. What are Graph Polynomials? Describe their construction. Highlight the assumptions required
 \begin{frame}{Graph Terminology Required}
-    
+    A graph $G:= (V,E)$ is given by a pair of sets denoting the vertices and edges that make up the graph. \begin{itemize}
+        \item<1-> $|G| = \# V$ is the order of $G$
+        \item<2-> $\| G \|= \# E$ is the size of $G$
+        \item<3-> $b_0(G)$ counts the number of connected components of $G$
+        \item<4-> $b_1(G)$ counts the number of loops in $G$
+        \item<5-> A \textit{tree} is a connected graph with no loops i.e. $b_0(G) = 1, b_1(G) = 0$.
+        \item<6-> A \textit{spanning} tree $T \leq G$ contains all of $V$ but not (necessarily) all of $E$.
+    \end{itemize}
 \end{frame}
+\subsection{Graph Polynomials}
 \begin{frame}{Constructing (particular) Graph Polynomials}
-    
+    For the rest of this presentation $G=(V,E)$ such that $\|G\| = n$ and $b_0(G) = 1$. A \textit{Kirchoff} polynomial for a given graph $G$ is given by $$P_G(x_1, \ldots, x_n):= \sum_{T \leq G} \prod_{e \notin T} x_e$$Note the variables of the polynomial correspond to a choice of labelling the edges.
 \end{frame}
 % 2. Where do the Kirchoff polynomials live? Why is this important? Is this important?
-\begin{frame}{Properties}
-    
+\begin{frame}{Properties of the Kirchoff Polynomial}
+    \begin{itemize}
+        \item<1-> They are homogenous polynomials, and lie in the quotient ring $k[x_1, x_2, \ldots , x_n]/(x_1^2, x_2^2, \ldots , x_n^2)$
+        \item<2-> The degree of each Kirchoff polynomial is exactly $b_1(G)$
+        \item<3-> Variables common to each term in the polynomial denote self-loops of $G$.
+        \item<4-> An equivalence relation $\sim_S$ can be imposed by $P_A \sim_S P_B \iff P_A(x_1, \ldots, x_n) = \tau \cdot P_B(x_1, \ldots, x_n)$. Here $\tau \in S_n$ permutes $n$ elements, corresponding to a relabelling of edges.
+    \end{itemize}
 \end{frame}
 % 3. How/Why are these so interesting?
 \subsection{History}
 %3.1 Highlight Grothendieck Ring
-\begin{frame}{What is... the Grothendieck Ring of Varieties}
-    
+\begin{frame}{What is... the Grothendieck Ring of Varieties?}
+    Consider the category of geometrically-reduced, separated schemes of finite type over a field $k$. Then $\mathcal{K}(V_k)$ denotes the free abelian group generated by equivalence classes of varieties $[X] = \{V | \pi: X \dasharrow V \text{a birational morphism exists} \}$; modulo all relations of the form $[X] = [X \setminus Y] + [Y]$. \\This group can be seen as a commutative ring with unity by defining multiplication $[X][Y] = [X \times_k Y]$\\
+    $\mathcal{K}{V_k}$ can be seen as a module over $\integer[q]$ where $q$ corresponds to $[\mathbb{A}^1]$
 \end{frame}
 %3.2 Go over Belkale Brosnan generation result
 \begin{frame}{Belkale, Brosnan (2004)}
-    
+    Let $\mathbb{V}(P_G) \subset \mathbb{A}^n$ denote the scheme of zeroes of $P_G$. Then define $Y_G = A^n \setminus \mathbb{V}(P_G)$ Then
+    \begin{theorem}[Belkale, Brosnan 2004]
+        The module generated by classes $[Y_G]$ over the ring $\integer[q]$, when localised by the multiplicative subset $\{[\mathbb{A}^n - \mathbb{A}^1]\}_{n \geq 2}$ is the entire Grothendieck Ring.
+    \end{theorem}
 \end{frame}
 %3.3 Go over Aluffi Marcolli Counter
 \begin{frame}{Aluffi, Marcolli 2011}
     
 \end{frame}
 \section{Describing the Relationship}
+\subsection{Grading the space of Graphs}
 \begin{frame}{What is the connection?}
     
 \end{frame}
@@ -96,6 +123,7 @@
 \begin{frame}{Image of $R$ on the Veronese}
     
 \end{frame}
+\subsection{Establishing a BB Result for Symmetric Tensors}
 % 2a What does the lefschetz motive L look like in terms of either graph polynomials or symmetric tensors?
 % 2b What does the multiplicative subset L^n - L look like in both settings?
 \begin{frame}{Localisations in Context}
