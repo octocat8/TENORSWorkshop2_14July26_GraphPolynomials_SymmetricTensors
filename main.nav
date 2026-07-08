@@ -41,20 +41,25 @@
 \headcommand {\beamer@framepages {31}{34}}
 \headcommand {\slideentry {3}{1}{2}{35/40}{Grading the space of Graphs}{0}}
 \headcommand {\beamer@framepages {35}{40}}
-\headcommand {\slideentry {3}{1}{3}{41/42}{Grading the space of Graphs}{0}}
-\headcommand {\beamer@framepages {41}{42}}
-\headcommand {\beamer@subsectionpages {31}{42}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{43}{Establishing a BB Result for Symmetric Tensors}}
-\headcommand {\slideentry {3}{2}{1}{43/43}{Establishing a BB Result for Symmetric Tensors}{0}}
-\headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {3}{2}{2}{44/44}{Establishing a BB Result for Symmetric Tensors}{0}}
-\headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {3}{2}{3}{45/45}{Establishing a BB Result for Symmetric Tensors}{0}}
+\headcommand {\beamer@subsectionpages {31}{40}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{41}{Establishing a BB Result for Symmetric Tensors}}
+\headcommand {\slideentry {3}{2}{1}{41/44}{Establishing a BB Result for Symmetric Tensors}{0}}
+\headcommand {\beamer@framepages {41}{44}}
+\headcommand {\slideentry {3}{2}{2}{45/45}{Establishing a BB Result for Symmetric Tensors}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {3}{2}{4}{46/46}{Establishing a BB Result for Symmetric Tensors}{0}}
-\headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@partpages {1}{46}}
-\headcommand {\beamer@subsectionpages {43}{46}}
-\headcommand {\beamer@sectionpages {31}{46}}
-\headcommand {\beamer@documentpages {46}}
-\headcommand {\gdef \inserttotalframenumber {18}}
+\headcommand {\slideentry {3}{2}{3}{46/49}{Establishing a BB Result for Symmetric Tensors}{0}}
+\headcommand {\beamer@framepages {46}{49}}
+\headcommand {\slideentry {3}{2}{4}{50/50}{Establishing a BB Result for Symmetric Tensors}{0}}
+\headcommand {\beamer@framepages {50}{50}}
+\headcommand {\slideentry {3}{2}{5}{51/53}{Establishing a BB Result for Symmetric Tensors}{0}}
+\headcommand {\beamer@framepages {51}{53}}
+\headcommand {\beamer@sectionpages {31}{53}}
+\headcommand {\beamer@subsectionpages {41}{53}}
+\headcommand {\sectionentry {4}{\translate {References}}{54}{\translate {References}}{0}}
+\headcommand {\slideentry {4}{0}{0}{54/54}{Establishing a BB Result for Symmetric Tensors}{0}}
+\headcommand {\beamer@framepages {54}{54}}
+\headcommand {\beamer@partpages {1}{54}}
+\headcommand {\beamer@subsectionpages {41}{54}}
+\headcommand {\beamer@sectionpages {31}{54}}
+\headcommand {\beamer@documentpages {54}}
+\headcommand {\gdef \inserttotalframenumber {19}}
