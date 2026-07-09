@@ -2,6 +2,7 @@
 \date{14 July 2026}
 \author{Lael John}
 \title[Graph Polynomials and Symmetric Tensors]{Bridging Graph Polynomials and Symmetric Tensors}
+\subtitle{TENORS Workshop 2}
 \institute{KU Leuven}
 \usepackage{amsmath, amsfonts, amssymb, amsrefs, amsthm}
 \usepackage{graphicx}
@@ -18,6 +19,8 @@
 % \setbeamercolor{frametitle}{fg=white,bg=KUL_blue}
 % \setbeamercolor{header}{fh}
 % \usecolortheme{orchid}
+% \setbeamertemplate{footline}{framenumber}
+\useoutertheme{infolines}
 
 \def\reals{\mathbb{R}} %real numbers
 \def\complex{\mathbb{C}} %complex numbers
@@ -40,12 +43,12 @@
 \begin{frame}{Table of Contents}
     \tableofcontents
 \end{frame}
-\begin{frame}{Overview}
+\begin{frame}{Goals for this Presentation}
     \begin{itemize}
         \item<1-> Highlight a relationship between symmetric tensors and graph polynomials
         \item<2-> Investigate the nature of this relationship in terms of \begin{enumerate}
-            \item<3-> Can a graded structure be imposed on the space of graphs?
-            \item<4-> Investigate establishing a Belkale-Brosnan type result for symmetric tensors
+            \item<3-> Attempting to establish a graded structure on the space of graphs
+            \item<4-> Attempting a Belkale-Brosnan type result for symmetric tensors
         \end{enumerate}
     \end{itemize}
 \end{frame}
@@ -55,38 +58,38 @@
 \begin{frame}{Symmetric Tensor Recap}
     \begin{itemize}
         \item<1-> \textit{"Symmetric tensors are objects that transform like symmetric tensors"}
-        \item<2-> For vector spaces $V_1, V_2 \ldots V_d$ over a field $k$, their tensor product is the vector space $V:= V_1 \otimes \cdots \otimes V_d$, describing all the multilinear mappings from $V_1^* \times \cdots V_d^* \to k$.
-        \item<3->  $T \in V$ is a symmetric tensor $\iff \sigma(T) = T \;\forall\; \sigma \in S_d$, where $S_d$ is the permutation group of $d$ elements.
+        \item<2-> For vector spaces $V_1, V_2 \ldots V_d$ over a field $k$, their tensor product is the vector space $V:= V_1 \otimes \cdots \otimes V_d$, describing all the multilinear mappings from $V_1^* \times \cdots V_d^* \to k$. \cite{landsberg_tensors_2012}
+        \item<3->  $T \in V$ is a symmetric tensor $\iff \sigma(T) = T \;\forall\; \sigma \in S_d$, where $S_d$ is the permutation group of $d$ elements. \cite{comon_symmetric_2008}
         \item<4-> Notation: $V^{\otimes d}$ denotes the tensor product of a vector space $V$ with itself $d$ times. $S^d(V) \subset V^{\otimes d}$ denotes the subspace containing all the symmetric tensors.
         \item<5-> Elementary symmetric tensors are of the form $v^{\otimes d}$.
     \end{itemize}
 \end{frame} 
 % 2. How are they related to homogenous polynomials?
 \begin{frame}{Relationship with Homogenous Polynomials}
-    Consider $k[x_1 \ldots x_n]_d$, the set of all homogenous polynomials of degree $d$ over $k$ (implicitly included in this is the $0$ polynomial). Then an established result is that $$k[x_1 \ldots x_n]_d \cong S^d(k^n)$$as $k$-vector spaces, by linearly extending the mapping of monomials $$\mathbf{x}^{\alpha}:= \prod_{i=1}^n x_i^{a_i} \mapsto \frac{1}{d!} \sum_{\sigma \in S_d} \sigma(\bigotimes_{i=1}^n e_i^{\otimes a_i}) $$
+    Consider $k[x_1 \ldots x_n]_d$, the set of all homogenous polynomials of degree $d$ over $k$ (implicitly included in this is the $0$ polynomial). Then an established result \cite{comon_symmetric_2008} is that $$k[x_1 \ldots x_n]_d \cong S^d(k^n)$$as $k$-vector spaces, by linearly extending the mapping of monomials $$\mathbf{x}^{\alpha}:= \prod_{i=1}^n x_i^{a_i} \mapsto \frac{1}{d!} \sum_{\sigma \in S_d} \sigma(\bigotimes_{i=1}^n e_i^{\otimes a_i}) $$
     Here $\alpha$ denotes the tuple $(a_1, a_2, \ldots, a_n)$ where $a_i \geq 0 \;\forall\; i = 1, 2,\ldots,n$, and for this mapping $|\alpha| = \sum_{i=1}^{n} a_i = d$.
 \end{frame} 
 % 3. How are they related to the Veronese Variety
 \begin{frame}{Veronese Variety}
-    Geometrically, consider $\proj V$ to be the set of all lines in $V \cong k^n$ passing through the origin. Then the Veronese mapping given by $$\nu_d: \proj V \to \proj k^N$$ taking points $$[x_1:x_2:\ldots:x_n] \mapsto [x_1^d: x_1^{d-1}x_2: \ldots: x_n^d]$$ allows for the visualisation of elementary (rank-1) symmetric tensors as points on a variety in $\proj k^N$. Here $N = \binom{n-1+d}{d}$. More general symmetric tensors then lie on secant varieties to the Veronese.
+    Geometrically, consider $\proj V$ to be the set of all lines in $V \cong k^n$ passing through the origin. Then the Veronese mapping given by $$\nu_d: \proj V \to \proj k^N$$ taking points $$[x_1:x_2:\ldots:x_n] \mapsto [x_1^d: x_1^{d-1}x_2: \ldots: x_n^d]$$ allows for the visualisation of elementary (rank-1) symmetric tensors as points on a variety in $\proj k^N$. Here $N = \binom{n-1+d}{d}$ \cite{smith_invitation_2004}. More general symmetric tensors then lie on secant varieties to the Veronese.
 \end{frame}
 %add a frame about secant varieties?
 %add a frame with the diagram showing connections between graphs, homogenous polynomials and symmetric tensors?
 \section{Graphs and Graph Polynomials} %5 slides max
 % 1. What are Graph Polynomials? Describe their construction. Highlight the assumptions required
 \begin{frame}{Graph Terminology Required}
-    A graph $G:= (V,E)$ is given by a pair of sets denoting the vertices and edges that make up the graph. \begin{itemize}
+    A graph $G:= (V,E)$ is given by a pair of sets denoting the vertices and edges that make up the graph \cite{diestel_graph_2017}. \begin{itemize}
         \item<1-> $|G| = \# V$ is the order of $G$
         \item<2-> $\| G \|= \# E$ is the size of $G$
-        \item<3-> $b_0(G)$ counts the number of connected components of $G$
-        \item<4-> $b_1(G)$ counts the number of loops in $G$
+        \item<3-> $b_0(G)$ counts the number of connected components of $G$ \cite{belkale_matroids_2003}
+        \item<4-> $b_1(G)$ counts the number of loops in $G$ \cite{belkale_matroids_2003}
         \item<5-> A \textit{tree} is a connected graph with no loops i.e. $b_0(G) = 1, b_1(G) = 0$.
         \item<6-> A \textit{spanning} tree $T \leq G$ contains all of $V$ but not (necessarily) all of $E$.
     \end{itemize}
 \end{frame}
 \subsection{Graph Polynomials}
 \begin{frame}{Constructing (particular) Graph Polynomials}
-    For the rest of this presentation $G=(V,E)$ such that $\|G\| = n$ and $b_0(G) = 1$. A \textit{Kirchoff} polynomial for a given graph $G$ is given by $$P_G(x_1, \ldots, x_n):= \sum_{T \leq G} \prod_{e \notin T} x_e$$Note the variables of the polynomial correspond to a choice of labelling the edges.
+    For the rest of this presentation $G=(V,E)$ such that $\|G\| = n$ and $b_0(G) = 1$. A \textit{Kirchoff} polynomial \cites{stanley_spanning_1998,krajewski_topological_2010} for a given graph $G$ is given by $$P_G(x_1, \ldots, x_n):= \sum_{T \leq G} \prod_{e \notin T} x_e$$Note the variables of the polynomial correspond to a choice of labelling the edges.
 \end{frame}
 % 2. Where do the Kirchoff polynomials live? Why is this important? Is this important?
 \begin{frame}{Properties of the Kirchoff Polynomial}
@@ -102,26 +105,27 @@
 %3.1 Highlight Grothendieck Ring
 \begin{frame}{What is... the Grothendieck Ring of Varieties?}
     \begin{itemize}
-        \item <1->Consider the category of geometrically-reduced, separated schemes of finite type over a field $k$.
-        \item<2->Then $\mathcal{K}(V_k)$ denotes the free abelian group generated by equivalence classes of varieties $[X] = \{V | \pi: X \dasharrow V \text{a birational morphism exists} \}$; modulo all relations of the form $[X] = [X \setminus Y] + [Y]$. Addition here is defined as $[X] + [Y] = [X \sqcup Y]$
+        \item <1->Consider $V_k$, the category of geometrically-reduced, separated schemes of finite type over a field $k$ (also called the collection of $k$-varieties)\cite{poonen_grothendieck_2002}.
+        \item<2->Then $\mathcal{K}(V_k)$ denotes the free abelian group generated by equivalence classes of varieties $[X] = \{V | \pi: X \dasharrow V \text{a birational morphism exists} \}$; modulo all relations of the form $[X] = [X \setminus Y] + [Y]$.
+        \item<2->Addition here is defined as $[X] + [Y] = [X \sqcup Y]$.
         \item<3->This group can be seen as a commutative ring with unity by defining multiplication $[X][Y] = [X \times_k Y]$.
-        \item<4->$\mathcal{K}(V_k)$ can be seen as a module over $\integer[\mathbb{L}]$ where $\mathbb{L} := [\mathbb{A}^1]$
+        \item<4->$\mathcal{K}(V_k)$ can be seen as a module over $\integer[\mathbb{L}]$ where $\mathbb{L} := [\mathbb{A}^1]$ \cite{aluffi_graph_2011}.
     \end{itemize}
 \end{frame}
 %3.2 Go over Belkale Brosnan generation result
-\begin{frame}{Belkale, Brosnan (2004)}
-    Let $\mathbb{V}(P_G) \subset \mathbb{A}^n$ denote the scheme of zeroes of $P_G$. Then define $Y_G = A^n \setminus \mathbb{V}(P_G)$ Then
-    \begin{theorem}[Belkale, Brosnan 2004]
+\begin{frame}{Belkale, Brosnan (2003)}
+    Let $\mathbb{V}(P_G) \subset \mathbb{A}^n$ denote the scheme of zeroes of $P_G$. Define $Y_G = A^n \setminus \mathbb{V}(P_G)$.
+    \begin{theorem}[Belkale, Brosnan (2003) \cite{belkale_matroids_2003}]
         Define $S:= \{\mathbb{L}^n - \mathbb{L}\}_{n \geq 2}$ as a multiplicative subset in $\mathcal{K}(V_k)$. Then the collection of $[Y_G]$ generate $S^{-1}\mathcal{K}(V_k)$ as a $S^{-1}\integer[\mathbb{L}]$ module.
     \end{theorem}
 \end{frame}
 %3.3 Go over Aluffi Marcolli Counter
 \begin{frame}{Aluffi, Marcolli 2011}
-    $X, Y$ are stably birational iff $X \times \proj k^m \dasharrow Y \times \proj k^n$ is birational, for $n, m \geq 0$.
-    \begin{theorem}[Larsen, Lunts (2001)]
+    $X, Y$ are stably birational $\iff X \times \proj k^m \dasharrow Y \times \proj k^n$ is birational, for $n, m \geq 0$.
+    \begin{theorem}[Larsen, Lunts (2001) \cite{larsen_2001_motivic}]
         $\mathcal{K}(V_k)/(\mathbb{L}) \cong \integer[SB]$, the ring of stably birational varieties
     \end{theorem}
-    \begin{theorem}[Aluffi, Marcolli (2011)]
+    \begin{theorem}[Aluffi, Marcolli (2011) \cite{aluffi_graph_2011}]
         The images of $[Y_G]$ in $\mathcal{K}(V_k)$ generate $\integer \subsetneq \integer[SB]$
     \end{theorem}
     \begin{corollary}
@@ -145,9 +149,9 @@
         \item<2->Then $[P_A]_S, [P_B]_S$ are their corresponding classes of Kirchoff polynomials.
         \item<3->$[P_A]_S = \{F(x_1, \ldots, x_n)| \tau \cdot F = F(x_{\tau(1)}, \ldots, x_{\tau(n)}) = P_A\}$
         \item<4-> The sum $[P_A]_S + [P_B]_S$ as a set can be seen as $\{p(x_1, \ldots x_n) + q(x_1, \ldots, x_n) | \sigma \cdot p = P_A, \tau \cdot q = P_B, \sigma, \tau \in S_n\}$
-        \item<5-> Choosing $P_C$ as an element with the largest number of summands in this set. $[P_C]_S$ then is a corresponding equivalence class.
-        \item<6-> \textbf{Conjecture:} Does there always exist $C$ a graph such that its Kirchoff polynomial is $P_C$? If yes then
-        \item<6-> This turns $\mathbf{G}_n$ into an additive abelian group
+        \item<5-> $P_C$ can be chosen as an element with the largest number of summands in this set. $[P_C]_S$ then is a corresponding equivalence class.
+        \item<6-> \textbf{Conjecture:} Does there always exist $C$, a graph, such that its Kirchoff polynomial is $P_C$? If yes then
+        \item<6-> \textit{This turns $\mathbf{G}_n$ into an additive abelian group}
     \end{itemize}
 \end{frame}
 
@@ -156,7 +160,7 @@
     \textit{What does $R$ (the ring of Kirchoff polynomials) look like when using $\Phi$ the isomorphism between homogenous polynomials and symmetric tensors?} (\textbf{Note:} $k$ is no longer required to be $\field_2$)
     \begin{itemize}
         \item<1-> Definitely consists of tensors that are not elementary, because $R$ contains no monomials with exponents larger than $1$. 
-        \item<2-> Since $R$ describes a subring of homogenous polynomials, it must also induce images in the space of symmetric tensors
+        \item<2-> Since $R$ describes a quotient ring of homogenous polynomials, it must also induce images in the space of symmetric tensors
         \item<3-> However, since none of the elements in $R$ can be expressed as linear polynomials to the $d$-th power, they cannot be seen as lying on the Veronese variety.
         \item<4-> Consider the mapping $\mu_d: \proj V \to \proj k^{\binom{n}{d}}$ taking $[x_1: \ldots:x_n] \mapsto [\prod_{i=1}^d x_i: \ldots: \prod_{i=n-d+1}^{n}x_i]$. 
     \end{itemize}
@@ -174,7 +178,7 @@
 Thus Kirchoff polynomials can be seen as specific points on $\sigma_r(i(\mu_d(\proj V))) \subseteq \sigma_r(\nu_d(\proj V))$ where $r$ denotes the rank of the image tensor under $\Phi$.
 \end{frame}
 \begin{frame}{Symmetric Tensors and the Grothendieck Ring}
-    \textit{If graph polynomials can generate the Grothendick Ring (in a localised manner), can the equivalent statement be transported to working with symmetric tensors?}
+    \textit{If graph polynomials can generate the Grothendieck Ring (in a localised manner), can the equivalent statement be transported to working with symmetric tensors?}
     \begin{itemize}
         \item<1-> The Grothendieck Ring consists of equivalence classes of varieties.
         \item<2-> Every homogenous polynomial generates a variety (and its complement). (Recall Chow's Lemma: every variety is birational to a projective variety)
@@ -185,18 +189,18 @@ Thus Kirchoff polynomials can be seen as specific points on $\sigma_r(i(\mu_d(\p
 % 3. Does the entire result from Belkale and Brosnan carry over?
 \begin{frame}{Generation of Symmetric Tensors}
     \textit{What does the element $[\mathbb{A}^1] =: \mathbb{L} \in \mathcal{K}(V_k)$ correspond to when working with symmetric tensors or homogenous polynomials?}
-    % \begin{itemize}
-    %     \item $[\mathbb{A}^1]$ is the equivalence class of all varieties having a birational morphism to $\mathbb{A}^1$
-    %     \item In $n$ variables, the intersection of $(n-1)$ of the $\mathbb{V}(x_i)$ is birational to $\mathbb{A}^1$
-    %     \item This can be seen as the ideal in $k[x_1, \ldots x_n]$ generated by $(n-1)$ linear forms, and in particular $(n-1)$ of the $x_i$
-    %     \item 
-    % \end{itemize}
+    \begin{itemize}
+        \item<1-> $[\mathbb{A}^1]$ is the equivalence class of all varieties having a birational morphism to $\mathbb{A}^1$
+        \item<2-> In $n$ variables, the intersection of $(n-1)$ of the $\mathbb{V}(x_i)$ is birational to $\mathbb{A}^1$ 
+        \item<3-> Describing the intersection in terms of a single homogenous polynomials, or in terms of an ideal generated by these linear monomials may be a profitable next step.
+    \end{itemize}
 \end{frame}
 \begin{frame}{Further Questions}
     \begin{itemize}
-        \item<1-> Do questions about rank/rank decompositions get answered by this approach?
+        \item<1-> Is there more underlying structure to the quotient ring $R$?
         \item<2-> What is the significance of the image $\mathbb{L}$ when working with symmetric tensors?
-        \item<3-> Does applying a grading on the space of graphs only work when dealing with the $\field_2$? Can this be extended to any field $k$?
+        \item<3-> Do questions about rank/rank decompositions get answered by this approach?
+        \item<4-> Does applying a grading on the space of graphs only work when dealing with the $\field_2$? Can this be extended to any field $k$?
     \end{itemize}
 \end{frame}
 \begin{frame}[allowframebreaks]

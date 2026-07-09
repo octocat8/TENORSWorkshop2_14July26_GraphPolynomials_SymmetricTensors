@@ -2,5 +2,138 @@
 \begin{bibdiv}
 \begin{biblist}
 
+\bib{aluffi_graph_2011}{article}{
+      author={Aluffi, Paolo},
+      author={Marcolli, Matilde},
+       title={Graph hypersurfaces and a dichotomy in the {Grothendieck} ring},
+    language={en},
+        date={2011-03},
+        ISSN={0377-9017, 1573-0530},
+     journal={Letters in Mathematical Physics},
+      volume={95},
+      number={3},
+       pages={223\ndash 232},
+         url={http://arxiv.org/abs/1005.4470},
+        note={arXiv:1005.4470 [math]},
+}
+
+\bib{belkale_matroids_2003}{article}{
+      author={Belkale, Prakash},
+      author={Brosnan, Patrick},
+       title={Matroids motives, and a conjecture of {Kontsevich}},
+    language={en},
+        date={2003-01},
+        ISSN={0012-7094},
+     journal={Duke Mathematical Journal},
+      volume={116},
+      number={1},
+         url={https://projecteuclid.org/journals/duke-mathematical-journal/volume-116/issue-1/Matroids-motives-and-a-conjecture-of-Kontsevich/10.1215/S0012-7094-03-11615-4.full},
+}
+
+\bib{comon_symmetric_2008}{article}{
+      author={Comon, Pierre},
+      author={Golub, Gene},
+      author={Lim, Lek-Heng},
+      author={Mourrain, Bernard},
+       title={Symmetric {Tensors} and {Symmetric} {Tensor} {Rank}},
+    language={en},
+        date={2008-01},
+        ISSN={0895-4798, 1095-7162},
+     journal={SIAM Journal on Matrix Analysis and Applications},
+      volume={30},
+      number={3},
+       pages={1254\ndash 1279},
+         url={http://epubs.siam.org/doi/10.1137/060661569},
+}
+
+\bib{diestel_graph_2017}{book}{
+      author={Diestel, Reinhard},
+       title={Graph {Theory}},
+    language={en},
+      series={Graduate {Texts} in {Mathematics}},
+   publisher={Springer Berlin Heidelberg},
+     address={Berlin, Heidelberg},
+        date={2017},
+      volume={173},
+        ISBN={978-3-662-53621-6 978-3-662-53622-3},
+         url={https://link.springer.com/10.1007/978-3-662-53622-3},
+}
+
+\bib{krajewski_topological_2010}{article}{
+      author={Krajewski, Thomas},
+      author={Rivasseau, Vincent},
+      author={Tanasă, Adrian},
+      author={Wang, Zhituo},
+       title={Topological graph polynomials and quantum field theory {Part} {I}: heat kernel theories},
+    language={en},
+        date={2010-01},
+        ISSN={1661-6952, 1661-6960},
+     journal={Journal of Noncommutative Geometry},
+      volume={4},
+      number={1},
+       pages={29\ndash 82},
+         url={https://ems.press/doi/10.4171/jncg/49},
+}
+
+\bib{landsberg_tensors_2012}{book}{
+      author={Landsberg, Joseph~M.},
+       title={Tensors: geometry and applications},
+    language={eng},
+      series={Graduate studies in mathematics},
+   publisher={American mathematical society},
+     address={Providence (R.I.)},
+        date={2012},
+      number={128},
+        ISBN={978-0-8218-6907-9},
+}
+
+\bib{larsen_2001_motivic}{article}{
+      author={Larsen, Michael},
+      author={Lunts, Valery~A},
+       title={Motivic measures and stable birational geometry},
+        date={2001},
+     journal={arXiv preprint math},
+        ISSN={0110255/},
+}
+
+\bib{poonen_grothendieck_2002}{article}{
+      author={Poonen, Bjorn},
+       title={The {Grothendieck} ring of varieties is not a domain},
+    language={en},
+        date={2002},
+        ISSN={10732780, 1945001X},
+     journal={Mathematical Research Letters},
+      volume={9},
+      number={4},
+       pages={493\ndash 497},
+         url={http://arxiv.org/abs/math/0204306},
+        note={arXiv:math/0204306},
+}
+
+\bib{smith_invitation_2004}{book}{
+      editor={Smith, Karen~E.},
+       title={An invitation to algebraic geometry},
+    language={en},
+     edition={Corrected printing},
+      series={Universitext},
+   publisher={Springer},
+     address={New York Berlin Heidelberg},
+        date={2004},
+        ISBN={978-0-387-98980-8},
+}
+
+\bib{stanley_spanning_1998}{article}{
+      author={Stanley, Richard~P.},
+       title={Spanning trees and a conjecture of {Kontsevich}},
+    language={en},
+        date={1998-12},
+        ISSN={0218-0006, 0219-3094},
+     journal={Annals of Combinatorics},
+      volume={2},
+      number={4},
+       pages={351\ndash 363},
+         url={http://link.springer.com/10.1007/BF01608530},
+}
+
 \end{biblist}
 \end{bibdiv}
