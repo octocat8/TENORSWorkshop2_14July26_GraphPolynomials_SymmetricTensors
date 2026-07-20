@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: amsrn.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: GPST.bib
+You've used 11 entries,
+            1497 wiz_defined-function locations,
+            496 strings with 4920 characters,
+and the built_in function-call counts, 9950 in all, are:
+= -- 330
+> -- 945
+< -- 9
++ -- 137
+- -- 901
+* -- 1011
+:= -- 2118
+add.period$ -- 0
+call.type$ -- 11
+change.case$ -- 57
+chr.to.int$ -- 24
+cite$ -- 11
+duplicate$ -- 606
+empty$ -- 301
+format.name$ -- 48
+if$ -- 941
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 279
+newline$ -- 153
+num.names$ -- 22
+pop$ -- 484
+preamble$ -- 1
+purify$ -- 46
+quote$ -- 0
+skip$ -- 170
+stack$ -- 0
+substring$ -- 158
+swap$ -- 465
+text.length$ -- 114
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 90
+warning$ -- 0
+while$ -- 149
+width$ -- 0
+write$ -- 369

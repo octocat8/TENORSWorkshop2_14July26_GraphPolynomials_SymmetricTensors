@@ -46,6 +46,20 @@
          url={http://epubs.siam.org/doi/10.1137/060661569},
 }
 
+\bib{cruickshank_global_2023}{misc}{
+      author={Cruickshank, James},
+      author={Mohammadi, Fatemeh},
+      author={Motwani, Harshit~J.},
+      author={Nixon, Anthony},
+      author={Tanigawa, Shin-ichi},
+       title={Global {Rigidity} of {Line} {Constrained} {Frameworks}},
+    language={en},
+   publisher={arXiv},
+        date={2023},
+         url={http://arxiv.org/abs/2208.09308},
+        note={arXiv:2208.09308 [math.CO]},
+}
+
 \bib{diestel_graph_2017}{book}{
       author={Diestel, Reinhard},
        title={Graph {Theory}},
